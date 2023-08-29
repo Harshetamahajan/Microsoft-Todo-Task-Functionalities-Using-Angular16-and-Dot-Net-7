@@ -1,0 +1,31 @@
+.image-container {
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px; /* Adjust to your needs */
+  }
+
+  .my-button {
+    font-size: 18px; /* Increase the font size */
+    padding: 12px 20px; /* Adjust padding to make the button larger */
+    display: block; /* Change the display property to allow horizontal alignment */
+    margin: 0 auto;
+       /* Animation */
+       opacity: 0; /* Set initial opacity to 0 */
+       animation: fadeIn 1s ease-in-out forwards; /* Apply the animation */
+     }
+     
+     /* Define the animation keyframes */
+     @keyframes fadeIn {
+       0% {
+         opacity: 0;
+         transform: translateY(20px); /* Start with a slight upward translation */
+       }
+       100% {
+         opacity: 1;
+         transform: translateY(0); /* End with no translation */
+       }
+     }
+ 
+  

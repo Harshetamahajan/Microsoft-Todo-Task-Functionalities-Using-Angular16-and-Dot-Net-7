@@ -1,0 +1,6 @@
+/* Assuming your primary color class is named 'primary-color' */
+.table-header {
+    background-color: var(--primary-color);
+    color: blue; /* You might want to adjust text color for visibility */
+  }
+  

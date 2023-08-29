@@ -1,0 +1,32 @@
+<app-dashboard></app-dashboard>
+
+<div class="image-container container-fluid image-container" style="background-image: url(https://t3.ftcdn.net/jpg/03/99/24/82/360_F_399248286_Ogm0T8CFeauN4Hdn42FqWfsCE02dJBbX.jpg);">
+  <div class="row justify-content-center align-items-center min-vh-100">
+    <div class=" col-md-6 mb-9 mt-2 signup-form">
+      <h1 class="text-center mb-4" style="color: rgb(255, 255, 0); text-size-adjust: 500;">Add New User</h1>
+      <form [formGroup]="userDataForm" (submit)="onSubmit()">
+        <!-- Username Field -->
+        <div class="form-group">
+          <label for="userName" style="color: azure; size: 20px; text-transform: capitalize;">Username</label>
+          <input type="text" class="form-control" id="userName" formControlName="userName">
+          <div *ngIf="userDataForm.get('userName')?.invalid && userDataForm.get('userName')?.touched">
+            <span style="color: rgb(247, 43, 43);" class="error-message">Username is required.</span>
+          </div>
+        </div>
+
+
+        <!-- Password Field -->
+        <div class="form-group">
+          <label for="password" style="color: azure;" >Password</label>
+          <input type="password" class="form-control" id="password" formControlName="password">
+          <div *ngIf="userDataForm.get('password')?.invalid && userDataForm.get('password')?.touched">
+            <span style="color: rgb(247, 43, 43); " class="error-message  ">Password must have at least 8 characters with uppercase, lowercase, and special
+              character.</span>
+          </div>
+        </div>
+
+        <button type="submit" class=" my-button btn btn-danger">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
