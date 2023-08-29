@@ -1,4 +1,8 @@
 # Microsoft-Todo-Task-Functionalities-Using-Angular16-and-Dot-Net-7
+1. In appsetting.json add your Dataconnection Details.
+2. Use Migration Commands to Add Data Model.
+3. By Default We can Use Swagger. 
+
 # User Functionality are : 
 1.  User can able to add to-do by clicking on input field on top.
 2. While adding the task user can have to add date by clicking on the Calendar Button. 
@@ -9,3 +13,4 @@
 7. User can have the Bell Icon button so that while clicking on the Bell Icon User can able to Add reminder of the Particular task.
 8. Selected time for the Reminder will be show up as a pop-up at the particular time.
 9. User can able to marks Important task while clicking on the Star Icon.
+
